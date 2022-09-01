@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR--BEGIN -->
+    <header id="header">
+      <p>
+        <span id="mainHeading">MyApp</span>
+        <span class="navBtn">&#9776;</span>
+      </p>
+    </header>
+    <nav class="navbar">
+      <div class="nav--menu nav--home selected">Home</div>
+      <div class="nav--menu nav--carousel">Carousel</div>
+      <div class="nav--menu nav--stopwatch">Stopwatch</div>
+    </nav>
+    <!-- NAVBAR--END -->
+
+    <!-- HOME--BEGIN -->
+    <main id="home">
+      <p>Welcome to Project</p>
+    </main>
+    <!-- HOME--END -->
+
+    <!-- CAROUSEL--BEGIN -->
+    <section id="carousel">
+      <section class="slider">
+        <img class="slider--img" src="images/img-1.png" />
+        <div class="slider--btn left">&lt;</div>
+        <div class="slider--btn right">&gt;</div>
+        <div class="slider--menu">
+          <div
+            class="slider--icon icon-1 slider--selected"
+            onclick="showImg(1)"
+          ></div>
+        </div>
+      </section>
+      <section id="toggleBtn">
+        <button class="toggle--btn">Show</button>
+      </section>
+      <section id="pictures" class="hidden">
+        <h3 class="headingText">GALLERY</h3>
+        <div id="gallery">
+          <img class="gallery--img" src="images/img-1.png" />
+        </div>
+      </section>
+    </section>
+    <!-- CAROUSEL--END -->
+
+    <!-- STOPWATCH--BEGIN -->
+    <section id="stopwatch">
+      <p id="clock">
+        <span id="hours">00</span> : <span id="minutes">00</span> :
+        <span id="seconds">00</span>
+      </p>
+      <div id="buttons">
+        <button id="str" class="btnStp">Start</button>
+        <button id="flag" class="btnStp hidden">Flag</button>
+        <button id="pares" class="btnStp hidden">Pause</button>
+        <button id="reset" class="btnStp hidden">Reset</button>
+      </div>
+      <ol id="flag--times"></ol>
+    </section>
+    <!-- STOPWATCH--END -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
